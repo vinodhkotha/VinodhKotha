@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App - Vinodh Kotha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Todo List</h1>
+            <p class="subtitle">Stay organized and get things done!</p>
+        </header>
+
+        <div class="input-section">
+            <input
+                type="text"
+                id="todoInput"
+                placeholder="What needs to be done?"
+                autocomplete="off"
+            >
+            <button id="addBtn" class="btn btn-add">Add</button>
+        </div>
+
+        <div class="filter-section">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <div class="stats">
+            <span id="totalTodos">0 total tasks</span>
+            <span id="activeTodos">0 active</span>
+        </div>
+
+        <ul id="todoList" class="todo-list">
+            <!-- Todos will be dynamically added here -->
+        </ul>
+
+        <div class="empty-state" id="emptyState">
+            <p>No todos yet! Add one to get started.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
